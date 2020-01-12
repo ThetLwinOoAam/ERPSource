@@ -1,0 +1,9 @@
+D:\Trainning\TPC-1\Asp Net MVC\ERP\Source\BCErp.DataAccess\BCErp.DataAccess\obj\Debug\BCErp.DataAccess.csproj.CoreCompileInputs.cache
+D:\Trainning\TPC-1\Asp Net MVC\ERP\Source\BCErp.DataAccess\BCErp.DataAccess\bin\Debug\BCErp.DataAccess.dll
+D:\Trainning\TPC-1\Asp Net MVC\ERP\Source\BCErp.DataAccess\BCErp.DataAccess\bin\Debug\BCErp.DataAccess.pdb
+D:\Trainning\TPC-1\Asp Net MVC\ERP\Source\BCErp.DataAccess\BCErp.DataAccess\bin\Debug\BCErp.DTO.dll
+D:\Trainning\TPC-1\Asp Net MVC\ERP\Source\BCErp.DataAccess\BCErp.DataAccess\bin\Debug\BCErp.DTO.pdb
+D:\Trainning\TPC-1\Asp Net MVC\ERP\Source\BCErp.DataAccess\BCErp.DataAccess\obj\Debug\BCErp.DataAccess.csproj.CopyComplete
+D:\Trainning\TPC-1\Asp Net MVC\ERP\Source\BCErp.DataAccess\BCErp.DataAccess\obj\Debug\BCErp.DataAccess.dll
+D:\Trainning\TPC-1\Asp Net MVC\ERP\Source\BCErp.DataAccess\BCErp.DataAccess\obj\Debug\BCErp.DataAccess.pdb
+D:\Trainning\TPC-1\Asp Net MVC\ERP\Source\BCErp.DataAccess\BCErp.DataAccess\obj\Debug\BCErp.DataAccess.csprojResolveAssemblyReference.cache
