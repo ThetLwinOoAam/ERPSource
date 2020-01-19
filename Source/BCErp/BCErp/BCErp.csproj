@@ -48,12 +48,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="BCErp.BusinessLogic">
-      <HintPath>..\..\BCErp.BusinessLogic\BCErp.BusinessLogic\bin\Debug\BCErp.BusinessLogic.dll</HintPath>
-    </Reference>
-    <Reference Include="BCErp.DTO">
-      <HintPath>..\..\BCErp.DTO\BCErp.DTO\bin\Debug\BCErp.DTO.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.8.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
@@ -152,6 +146,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\RoleController.cs" />
+    <Compile Include="Controllers\SupplierController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -7236,6 +7231,10 @@
     <Content Include="Views\Role\Index.cshtml" />
     <Content Include="Views\User\Index.cshtml" />
     <Content Include="Views\User\Create.cshtml" />
+    <Content Include="Views\Supplier\Index.cshtml" />
+    <Content Include="Views\Supplier\Create.cshtml" />
+    <Content Include="Views\Supplier\Edit.cshtml" />
+    <Content Include="Views\User\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -7260,6 +7259,16 @@
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\BCErp.BusinessLogic\BCErp.BusinessLogic\BCErp.BusinessLogic.csproj">
+      <Project>{8d43d636-8dd5-4205-9412-a8155bd3b968}</Project>
+      <Name>BCErp.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BCErp.DTO\BCErp.DTO\BCErp.DTO.csproj">
+      <Project>{5059d05c-9386-45fe-964c-ff1be3ab2775}</Project>
+      <Name>BCErp.DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -7279,7 +7288,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>49546</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:49546/</IISUrl>
+          <IISUrl>http://localhost:20000/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

@@ -18,5 +18,14 @@ namespace BCErp.BusinessLogic
             return userDAO.GetAll();
         }
 
+        public int Create(UserDTO userDTO)
+        {
+            return userDAO.Create(userDTO);
+        }
+
+        public UserDTO GetById(int id)
+        {
+            return userDAO.GetById(id);
+        }
     }
 }

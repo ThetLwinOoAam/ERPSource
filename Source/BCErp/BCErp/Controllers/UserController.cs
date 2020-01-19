@@ -22,6 +22,7 @@ namespace BCErp.Controllers
             return View();
         }
 
+        [HttpGet]
         public ActionResult Create()
         {
             List<RoleDTO> roleList = roleBL.GetAll();
@@ -29,6 +30,26 @@ namespace BCErp.Controllers
 
 
             return View();
+        }
+
+        
+        [HttpPost,ActionName("Create")]
+        public ActionResult Create_Post(UserDTO userDTO)
+        {
+            if (userBL.Create(userDTO) > 0)
+            {
+                ResultMessage resultMessage = new ResultMessage() { Code = "000", Description = "Success save" };
+                return Json(resultMessage, JsonRequestBehavior.AllowGet);
+            }
+
+            return Json(new ResultMessage() { Code = "001", Description = "Create fail" }, JsonRequestBehavior.AllowGet);
+        }
+
+        [HttpGet]
+        public ActionResult Edit(int id)
+        {
+            UserDTO userDTO = userBL.GetById(id);
+            return View(userDTO);
         }
     }
 }

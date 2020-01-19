@@ -3,3 +3,4 @@ D:\Trainning\TPC-1\Asp Net MVC\ERP\Source\BCErp.DTO\BCErp.DTO\bin\Debug\BCErp.DT
 D:\Trainning\TPC-1\Asp Net MVC\ERP\Source\BCErp.DTO\BCErp.DTO\obj\Debug\BCErp.DTO.csproj.CoreCompileInputs.cache
 D:\Trainning\TPC-1\Asp Net MVC\ERP\Source\BCErp.DTO\BCErp.DTO\obj\Debug\BCErp.DTO.dll
 D:\Trainning\TPC-1\Asp Net MVC\ERP\Source\BCErp.DTO\BCErp.DTO\obj\Debug\BCErp.DTO.pdb
+D:\Trainning\TPC-1\Asp Net MVC\ERP\Source\BCErp.DTO\BCErp.DTO\obj\Debug\BCErp.DTO.csprojResolveAssemblyReference.cache
