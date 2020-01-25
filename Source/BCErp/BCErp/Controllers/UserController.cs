@@ -48,8 +48,22 @@ namespace BCErp.Controllers
         [HttpGet]
         public ActionResult Edit(int id)
         {
+            List<RoleDTO> roleList = roleBL.GetAll();
+            ViewBag.RoleList = new SelectList(roleList, "Id", "Name");
             UserDTO userDTO = userBL.GetById(id);
             return View(userDTO);
+        }
+
+        [HttpPost, ActionName("Edit")]
+        public ActionResult Edit_Post(UserDTO userDTO)
+        {
+            if (userBL.Edit(userDTO) > 0)
+            {
+                ResultMessage resultMessage = new ResultMessage() { Code = "000", Description = "Success save" };
+                return Json(resultMessage, JsonRequestBehavior.AllowGet);
+            }
+
+            return Json(new ResultMessage() { Code = "001", Description = "Create fail" }, JsonRequestBehavior.AllowGet);
         }
     }
 }

@@ -101,5 +101,22 @@ namespace BCErp.DataAccess
             return cmd.ExecuteNonQuery();
 
         }
+
+        public int Edit(UserDTO userDTO)
+        {
+            SqlCommand cmd = new SqlCommand("SpEditUser", DbConnector.Connect());
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@Id", userDTO.Id);
+            cmd.Parameters.AddWithValue("@Code", userDTO.Code);
+            cmd.Parameters.AddWithValue("@Name", userDTO.Name);
+            cmd.Parameters.AddWithValue("@Email", userDTO.Email);
+            cmd.Parameters.AddWithValue("@Password", userDTO.Password);
+            cmd.Parameters.AddWithValue("@RoleId", userDTO.RoleId);
+            cmd.Parameters.AddWithValue("@ModifiedBy", userDTO.ModifiedBy);
+            cmd.Parameters.AddWithValue("@Active", userDTO.Active);
+
+            return cmd.ExecuteNonQuery();
+
+        }
     }
 }

@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ModuleItemDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ResultMessage.cs" />
     <Compile Include="RoleDTO.cs" />
