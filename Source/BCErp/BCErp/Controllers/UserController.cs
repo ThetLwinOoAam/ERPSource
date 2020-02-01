@@ -17,6 +17,13 @@ namespace BCErp.Controllers
         // GET: User
         public ActionResult Index()
         {
+            
+            if (Session["sessionUser"] == null)
+            {
+              return  RedirectToAction("Index","Home");
+                
+            }
+
             List<UserDTO> userDTOs = userBL.GetAll();
             ViewBag.UserList = userDTOs;
             return View();
@@ -36,6 +43,16 @@ namespace BCErp.Controllers
         [HttpPost,ActionName("Create")]
         public ActionResult Create_Post(UserDTO userDTO)
         {
+            if (Session["sessionUser"] == null)
+            {
+                return Json(new ResultMessage() { Code = "002", Description = "Session timeout" }, JsonRequestBehavior.AllowGet);
+
+            }
+
+            UserDTO sessionUser =(UserDTO) Session["sessionUser"];
+
+            userDTO.CreatedBy = sessionUser.Id;
+
             if (userBL.Create(userDTO) > 0)
             {
                 ResultMessage resultMessage = new ResultMessage() { Code = "000", Description = "Success save" };

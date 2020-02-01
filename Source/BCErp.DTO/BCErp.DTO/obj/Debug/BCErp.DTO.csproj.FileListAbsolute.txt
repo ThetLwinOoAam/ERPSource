@@ -9,3 +9,4 @@ D:\Git\ERPSource\Source\BCErp.DTO\BCErp.DTO\bin\Debug\BCErp.DTO.pdb
 D:\Git\ERPSource\Source\BCErp.DTO\BCErp.DTO\obj\Debug\BCErp.DTO.csproj.CoreCompileInputs.cache
 D:\Git\ERPSource\Source\BCErp.DTO\BCErp.DTO\obj\Debug\BCErp.DTO.dll
 D:\Git\ERPSource\Source\BCErp.DTO\BCErp.DTO\obj\Debug\BCErp.DTO.pdb
+D:\Git\ERPSource\Source\BCErp.DTO\BCErp.DTO\obj\Debug\BCErp.DTO.csprojResolveAssemblyReference.cache

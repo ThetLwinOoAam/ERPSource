@@ -147,7 +147,9 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\RoleController.cs" />
     <Compile Include="Controllers\SupplierController.cs" />
+    <Compile Include="Controllers\SupplierReportController.cs" />
     <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Controllers\UserReportController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -7235,6 +7237,8 @@
     <Content Include="Views\Supplier\Create.cshtml" />
     <Content Include="Views\Supplier\Edit.cshtml" />
     <Content Include="Views\User\Edit.cshtml" />
+    <Content Include="Views\UserReport\UserListing.cshtml" />
+    <Content Include="Views\SupplierReport\SupplierListing.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
