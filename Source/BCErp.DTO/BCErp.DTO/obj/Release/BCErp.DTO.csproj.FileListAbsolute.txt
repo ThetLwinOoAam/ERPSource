@@ -1,0 +1,6 @@
+D:\Git\ERPSource\Source\BCErp.DTO\BCErp.DTO\bin\Release\BCErp.DTO.dll
+D:\Git\ERPSource\Source\BCErp.DTO\BCErp.DTO\bin\Release\BCErp.DTO.pdb
+D:\Git\ERPSource\Source\BCErp.DTO\BCErp.DTO\obj\Release\BCErp.DTO.csprojResolveAssemblyReference.cache
+D:\Git\ERPSource\Source\BCErp.DTO\BCErp.DTO\obj\Release\BCErp.DTO.csproj.CoreCompileInputs.cache
+D:\Git\ERPSource\Source\BCErp.DTO\BCErp.DTO\obj\Release\BCErp.DTO.dll
+D:\Git\ERPSource\Source\BCErp.DTO\BCErp.DTO\obj\Release\BCErp.DTO.pdb

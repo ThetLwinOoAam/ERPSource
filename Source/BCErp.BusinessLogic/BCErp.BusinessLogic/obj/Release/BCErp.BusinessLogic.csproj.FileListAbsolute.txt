@@ -1,0 +1,11 @@
+D:\Git\ERPSource\Source\BCErp.BusinessLogic\BCErp.BusinessLogic\bin\Release\BCErp.BusinessLogic.dll
+D:\Git\ERPSource\Source\BCErp.BusinessLogic\BCErp.BusinessLogic\bin\Release\BCErp.BusinessLogic.pdb
+D:\Git\ERPSource\Source\BCErp.BusinessLogic\BCErp.BusinessLogic\bin\Release\BCErp.DataAccess.dll
+D:\Git\ERPSource\Source\BCErp.BusinessLogic\BCErp.BusinessLogic\bin\Release\BCErp.DTO.dll
+D:\Git\ERPSource\Source\BCErp.BusinessLogic\BCErp.BusinessLogic\bin\Release\BCErp.DataAccess.pdb
+D:\Git\ERPSource\Source\BCErp.BusinessLogic\BCErp.BusinessLogic\bin\Release\BCErp.DTO.pdb
+D:\Git\ERPSource\Source\BCErp.BusinessLogic\BCErp.BusinessLogic\obj\Release\BCErp.BusinessLogic.csprojResolveAssemblyReference.cache
+D:\Git\ERPSource\Source\BCErp.BusinessLogic\BCErp.BusinessLogic\obj\Release\BCErp.BusinessLogic.csproj.CoreCompileInputs.cache
+D:\Git\ERPSource\Source\BCErp.BusinessLogic\BCErp.BusinessLogic\obj\Release\BCErp.BusinessLogic.csproj.CopyComplete
+D:\Git\ERPSource\Source\BCErp.BusinessLogic\BCErp.BusinessLogic\obj\Release\BCErp.BusinessLogic.dll
+D:\Git\ERPSource\Source\BCErp.BusinessLogic\BCErp.BusinessLogic\obj\Release\BCErp.BusinessLogic.pdb

@@ -1,0 +1,9 @@
+D:\Git\ERPSource\Source\BCErp.DataAccess\BCErp.DataAccess\bin\Release\BCErp.DataAccess.dll
+D:\Git\ERPSource\Source\BCErp.DataAccess\BCErp.DataAccess\bin\Release\BCErp.DataAccess.pdb
+D:\Git\ERPSource\Source\BCErp.DataAccess\BCErp.DataAccess\bin\Release\BCErp.DTO.dll
+D:\Git\ERPSource\Source\BCErp.DataAccess\BCErp.DataAccess\bin\Release\BCErp.DTO.pdb
+D:\Git\ERPSource\Source\BCErp.DataAccess\BCErp.DataAccess\obj\Release\BCErp.DataAccess.csprojResolveAssemblyReference.cache
+D:\Git\ERPSource\Source\BCErp.DataAccess\BCErp.DataAccess\obj\Release\BCErp.DataAccess.csproj.CoreCompileInputs.cache
+D:\Git\ERPSource\Source\BCErp.DataAccess\BCErp.DataAccess\obj\Release\BCErp.DataAccess.csproj.CopyComplete
+D:\Git\ERPSource\Source\BCErp.DataAccess\BCErp.DataAccess\obj\Release\BCErp.DataAccess.dll
+D:\Git\ERPSource\Source\BCErp.DataAccess\BCErp.DataAccess\obj\Release\BCErp.DataAccess.pdb

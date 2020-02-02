@@ -17,7 +17,7 @@ namespace BCErp.Controllers
         [HttpPost, ActionName("Index")]
         public ActionResult Create_Post(UserDTO userDTO)
         {
-            if (userDTO.Email == "a@gmail.com" ||userDTO.Password == "123")
+            if (userDTO.Email == "a@gmail.com" && userDTO.Password == "123")
             {
                 UserDTO sessionUser = new UserDTO() { Id = 1, Email = userDTO.Email, Password =userDTO.Password };
 

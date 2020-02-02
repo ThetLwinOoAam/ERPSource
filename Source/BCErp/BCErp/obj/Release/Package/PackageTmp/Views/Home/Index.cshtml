@@ -1,0 +1,71 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+}
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        Login
+        <button class="btn btn-sm btn-default" id="btnSave" style="float:right;margin-top:-5px;">Login</button>
+
+    </div>
+    <div class="panel-body">
+        <div class="form-horizontal">           
+            <div class="form-group">
+                <label class="control-label col-sm-4" for="email">Email:</label>
+                <div class="col-sm-8">
+                    <input type="email" class="form-control" id="email" placeholder="Enter Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-4" for="pwd">Password:</label>
+                <div class="col-sm-8">
+                    <input type="password" class="form-control" id="password" placeholder="Enter Password">
+                </div>
+            </div>
+           
+
+        </div>
+
+    </div>
+</div>
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script>
+
+    $(document).ready(function () {
+
+
+
+        $("#btnSave").click(function () {
+
+            
+            var Email = $("#email").val();
+            var Password = $("#password").val();
+            $.ajax({
+                url: '/Home/Index',
+                method: 'post',
+                dataType: 'JSON',
+                data: { Email: Email, Password: Password},
+                success: function (result) {
+
+                    if (result.Code == "000")
+                        window.location = '/User/Index';
+
+                    else {
+                        $("#spanSuccessTitle").html("User Create");
+                        $("#mdlSuccess").modal();
+                        $("#pSuccessBody").text(result.Description);
+                    }
+
+                },
+                error: function (result) {
+                    console.log(result);
+                }
+            });
+
+
+
+        });//end btnSave
+    });
+
+</script>

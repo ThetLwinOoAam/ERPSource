@@ -283,3 +283,5 @@ D:\Git\ERPSource\Source\BCErp\BCErp\obj\Debug\BCErp.csproj.CoreCompileInputs.cac
 D:\Git\ERPSource\Source\BCErp\BCErp\obj\Debug\BCErp.csproj.CopyComplete
 D:\Git\ERPSource\Source\BCErp\BCErp\obj\Debug\BCErp.dll
 D:\Git\ERPSource\Source\BCErp\BCErp\obj\Debug\BCErp.pdb
+D:\Git\ERPSource\Source\BCErp\BCErp\bin\itextsharp.dll
+D:\Git\ERPSource\Source\BCErp\BCErp\bin\itextsharp.xml
