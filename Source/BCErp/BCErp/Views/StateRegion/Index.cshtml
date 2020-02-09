@@ -1,0 +1,146 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<button class="btn btn-sm btn-default" id="btnLoad" style="float:right;margin-top:-5px;">Load</button>
+<button class="btn btn-sm btn-default" id="btnShow" style="float:right;margin-top:-5px;">Show</button>
+<button class="btn btn-sm btn-default" id="btnLoadStateRegion" style="float:right;margin-top:-5px;">Load State Region</button>
+<button class="btn btn-sm btn-default" id="btnShowStateRegion" style="float:right;margin-top:-5px;">Show State Region</button>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <td>No</td>
+            <td>Value</td>
+        </tr>
+    </thead>
+    <tbody id="tbodyResult"></tbody>
+
+</table>
+
+<table class="table">
+    <thead>
+        <tr>
+            <td>No</td>
+            <td>Code</td>
+            <td>Name</td>
+        </tr>
+    </thead>
+    <tbody id="tbodyStateRegion"></tbody>
+
+</table>
+
+
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+    $(function () {
+        var $j = jQuery.noConflict();
+        $("#RegisterDate").datepicker({
+            changeMonth: true, changeYear: true
+        });
+
+
+    });
+
+    $(document).ready(function () {
+
+        $("#btnLoad").click(function () {
+
+            
+            $.ajax({
+                url: 'http://localhost:49167/api/values',
+                method: 'get',
+                dataType: 'JSON',                
+                success: function (result) {
+                    
+                    var content = "";
+                    for (var i = 0; i < result.length; i++) {
+                        content += "<tr><td>" + (i + 1) + "</td><td>" + result[i] + "</td></tr>"
+                    }
+
+                    $("#tbodyResult").html(content);
+                },
+                error: function (result) {
+                    console.log(result);
+                }
+            });
+
+
+
+        });//end btnSave
+
+        $("#btnLoadStateRegion").click(function () {
+
+
+            $.ajax({
+                url: 'http://localhost:49167/api/stateregion',
+                method: 'get',
+                dataType: 'JSON',
+                success: function (result) {
+
+                    var content = "";
+                    for (var i = 0; i < result.length; i++) {
+                        content += "<tr><td>" + (i + 1) + "</td><td>" + result[i].Code + "</td><td>" + result[i].Name + "</td></tr>"
+                    }
+
+                    $("#tbodyStateRegion").html(content);
+                },
+                error: function (result) {
+                    console.log(result);
+                }
+            });
+
+
+
+        });//end btnSave
+
+        $("#btnShow").click(function () {
+
+
+            $.ajax({
+                url: 'http://localhost:49167/api/values/1',
+                method: 'get',
+                dataType: 'JSON',
+                success: function (result) {
+
+                    alert(result);
+                },
+                error: function (result) {
+                    console.log(result);
+                }
+            });
+
+
+
+        });//end btnSave
+
+        $("#btnShowStateRegion").click(function () {
+
+
+            $.ajax({
+                url: 'http://localhost:49167/api/stateregion/1',
+                method: 'get',
+                dataType: 'JSON',
+                success: function (result) {
+
+                    alert(result);
+                },
+                error: function (result) {
+                    console.log(result);
+                }
+            });
+
+
+
+        });//end btnSave
+    });
+
+</script>
+
+

@@ -1,0 +1,49 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+
+<input type="file" id="fupFile" />
+<input type="button" id="btnUpload" value="Upload" />
+
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+    $(function () {
+        var $j = jQuery.noConflict();
+        $("#RegisterDate").datepicker({
+            changeMonth: true, changeYear: true
+        });
+
+
+    });
+
+    $(document).ready(function () {
+
+        $("#btnUpload").click(function () {
+
+            var fileUpload = $("#fupFile").get(0);
+            var files = fileUpload.files;
+            var fileData = new FormData();
+            fileData.append(files[0].name, files[0]);
+            $.ajax({
+	            url: '/FileUpload/UploadFiles',
+	            type: "POST",
+	            contentType: false, 
+	            processData: false, 
+	            data: fileData,
+	             success: function (result) {  alert(result);  }
+                            });
+
+    
+        });//end btnSave
+    });
+
+</script>
+
+
+

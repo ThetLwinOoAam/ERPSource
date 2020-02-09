@@ -1,0 +1,64 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<button class="btn btn-sm btn-default" id="btnLoad" style="float:right;margin-top:-5px;">Load</button>
+<table>
+    <thead>
+        <tr>
+            <td>Id</td>
+            <td>Code</td>
+            <td>Name</td>
+        </tr>
+    </thead>
+    <tbody id="tbody">
+
+    </tbody>
+</table>
+
+
+
+
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+    $(function () {
+        var $j = jQuery.noConflict();
+       
+    });
+
+    $(document).ready(function () {
+
+        $("#btnLoad").click(function () {
+              
+            $.ajax({
+                url: 'http://localhost:52501/api/customer',
+                method: 'get',
+                dataType: 'JSON',                
+                success: function (result) {
+                    
+                    var rows = "";
+                    for (var i = 0; i < result.length; i++) {
+                        rows += "<tr><td>" + result[i].id + "</td><td>" + result[i].code
+                            + "</td><td>" + result[i].name + "</td></tr>";
+                    }
+
+                    $("#tbody").html(rows);
+                },
+                error: function (result) {
+                    console.log(result);
+                }
+            });
+
+
+
+        });
+    });
+
+</script>
+
+

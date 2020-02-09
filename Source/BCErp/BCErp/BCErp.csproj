@@ -147,8 +147,11 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CustomerTestController.cs" />
+    <Compile Include="Controllers\FileUploadController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\RoleController.cs" />
+    <Compile Include="Controllers\StateRegionController.cs" />
     <Compile Include="Controllers\SupplierController.cs" />
     <Compile Include="Controllers\SupplierReportController.cs" />
     <Compile Include="Controllers\UserController.cs" />
@@ -7243,6 +7246,9 @@
     <Content Include="Views\User\Edit.cshtml" />
     <Content Include="Views\UserReport\UserListing.cshtml" />
     <Content Include="Views\SupplierReport\SupplierListing.cshtml" />
+    <Content Include="Views\FileUpload\Index.cshtml" />
+    <Content Include="Views\StateRegion\Index.cshtml" />
+    <Content Include="Views\CustomerTest\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
