@@ -6,6 +6,7 @@
 <h2>Index</h2>
 
 <button class="btn btn-sm btn-default" id="btnLoad" style="float:right;margin-top:-5px;">Load</button>
+<button class="btn btn-sm btn-default" id="btnPost" style="float:right;margin-top:-5px;">Post</button>
 <table>
     <thead>
         <tr>
@@ -55,6 +56,23 @@
             });
 
 
+
+        });
+
+        $("#btnPost").click(function () {
+
+            var customer = { 'Id': 5, 'Code': '092323', 'Name': 'David' };
+            $.ajax({
+                url: "http://localhost:52501/api/customer",
+                method: "POST",
+                data: JSON.stringify(customer),    // for one value case use ->  data : '='+'myval‘
+                dataType: "json",
+                contentType: "application/json",
+                success: function () { },
+                error: function (result) {
+                    console.log(result);
+                }
+            });
 
         });
     });

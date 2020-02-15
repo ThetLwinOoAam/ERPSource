@@ -25,10 +25,10 @@ namespace CustomerWebApi
             config.Formatters.JsonFormatter.SerializerSettings.Formatting = Newtonsoft.Json.Formatting.Indented;
             config.Formatters.JsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
 
-            //EnableCorsAttribute corsAttribute = new EnableCorsAttribute("*", "*", "*");
-            //config.EnableCors(corsAttribute);
+            EnableCorsAttribute corsAttribute = new EnableCorsAttribute("*", "*", "*");
+            config.EnableCors(corsAttribute);
 
-            config.EnableCors();
+            //config.EnableCors();
         }
     }
 }

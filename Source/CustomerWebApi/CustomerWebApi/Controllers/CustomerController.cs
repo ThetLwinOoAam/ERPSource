@@ -10,29 +10,36 @@ namespace CustomerWebApi.Controllers
 {
     public class CustomerController : ApiController
     {
-        public IEnumerable<CustomerModel> Get()
+        static List<CustomerModel> customers = new List<CustomerModel>()
         {
-            List<CustomerModel> customerModels = new List<CustomerModel>();
-            customerModels.Add(new CustomerModel() {
+            new CustomerModel() {
                 Id=1,
                 Code="012233",
                 Name="Kyaw Kyaw"
-            });
-            customerModels.Add(new CustomerModel()
+            },
+            new CustomerModel()
             {
-                Id = 1,
+                Id = 2,
                 Code = "012237",
                 Name = "Kyaw Soe"
-            });
-            customerModels.Add(new CustomerModel()
+            },
+            new CustomerModel()
             {
-                Id = 1,
-                Code = "012233",
+                Id = 3,
+                Code = "012239",
                 Name = "Moe Moe"
-            });
+            }
 
-            return customerModels;
+        };
 
+        public IEnumerable<CustomerModel> Get()
+        {            
+            return customers;
+        }
+
+        public void Post([FromBody]CustomerModel customer)
+        {
+            customers.Add(customer);
         }
 
     }
