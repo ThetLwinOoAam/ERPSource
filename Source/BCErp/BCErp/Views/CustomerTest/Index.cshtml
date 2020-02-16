@@ -39,6 +39,10 @@
             $.ajax({
                 url: 'http://localhost:52501/api/customer',
                 method: 'get',
+                headers: {
+                    "Authorization": "Basic " + "YUBnbWFpbC5jb207YXNkZg=="
+                },
+
                 dataType: 'JSON',                
                 success: function (result) {
                     

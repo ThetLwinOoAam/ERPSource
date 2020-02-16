@@ -8,8 +8,10 @@ using CustomerWebApi.Models;
 
 namespace CustomerWebApi.Controllers
 {
+    [BasicAuthorizationFilter]
     public class CustomerController : ApiController
     {
+        
         static List<CustomerModel> customers = new List<CustomerModel>()
         {
             new CustomerModel() {
@@ -31,7 +33,7 @@ namespace CustomerWebApi.Controllers
             }
 
         };
-
+        
         public IEnumerable<CustomerModel> Get()
         {            
             return customers;
